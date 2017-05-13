@@ -20,18 +20,33 @@ body {
   font-family: $openSans;
 }
 
-.show-header {
-  background: $white;
-  border-top: 1px solid $lightGrey;
-  border-bottom: 1px solid $lightGrey;
-  font-weight: $bold;
-  &:first-child{
-    border-top: none;
+header {
+  background: $darkPurple;
+  padding: 10px;
+  text-align: center;
+  #main-header {
+    position: relative;
+    padding: 5px 0 20px 0;
+    font-size: 1.6em;
+    color: $white;
+    span {
+      color: $teal;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 38%;
+      width: 25%;
+      border-bottom: 1px solid $darkGrey;
+    }
   }
-}
-
-.show-tab {
-  display: flex;
+  #name {
+    padding: 10px 0 0 0;
+    font-size: 0.9em;
+    color: $white;
+    font-weight: $bold;
+  }
 }
 
 section {
@@ -43,7 +58,7 @@ section {
   margin: 50px auto;
 }
 
-h1 {
+.tab-header {
   margin: 0;
   padding: 15px;
   border: 1px solid $white;
@@ -80,3 +95,26 @@ article {
     line-height: 24px;
   }
 }
+.show-header {
+  background: $white;
+  border-top: 1px solid $lightGrey;
+  border-bottom: 1px solid $lightGrey;
+  font-weight: $bold;
+  &:first-child{
+    border-top: none;
+  }
+}
+.show-tab {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
