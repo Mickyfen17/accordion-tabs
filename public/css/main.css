@@ -129,7 +129,7 @@ article {
   border-bottom: 1px solid #D1D2D3;
   font-weight: 600; }
   .show-header:first-child {
-    border-top: none; }
+    border-top: 1px solid transparent; }
 
 .show-tab {
   display: flex; }

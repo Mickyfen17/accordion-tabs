@@ -121,7 +121,7 @@ article {
   border-bottom: 1px solid $lightGrey;
   font-weight: $bold;
   &:first-child{
-    border-top: none;
+    border-top: 1px solid transparent;
   }
 }
 .show-tab {
