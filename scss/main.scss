@@ -32,11 +32,13 @@ header {
     span {
       color: $teal;
     }
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 38%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       width: 25%;
       border-bottom: 1px solid $darkGrey;
     }
@@ -46,6 +48,24 @@ header {
     font-size: 0.9em;
     color: $white;
     font-weight: $bold;
+  }
+}
+
+.challenge-name {
+  position: relative;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25%;
+    border-bottom: 1px solid $lightGrey;
   }
 }
 
@@ -107,14 +127,3 @@ article {
 .show-tab {
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-

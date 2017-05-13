@@ -51,11 +51,13 @@ header {
     color: #FFF; }
     header #main-header span {
       color: #34D1D1; }
-    header #main-header::after {
+    header #main-header:after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 38%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
       width: 25%;
       border-bottom: 1px solid #666666; }
   header #name {
@@ -63,6 +65,22 @@ header {
     font-size: 0.9em;
     color: #FFF;
     font-weight: 600; }
+
+.challenge-name {
+  position: relative;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase; }
+  .challenge-name:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 25%;
+    border-bottom: 1px solid #D1D2D3; }
 
 section {
   display: flex;
