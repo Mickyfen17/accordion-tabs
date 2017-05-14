@@ -30,5 +30,3 @@ window.onload = () => {
     document.querySelector('.tab-header').classList.add('show-header');
   }
 }
-
-
