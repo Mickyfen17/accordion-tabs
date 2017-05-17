@@ -129,6 +129,19 @@ section {
   display: block;
 }
 
+#code-btn {
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  padding: 15px 0;
+  background: $darkPurple;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 @media (min-width: 550px) {
   section {
     position: relative;
@@ -139,6 +152,7 @@ section {
       width: calc(100% / 4);
     }
     .tabs {
+      max-height: 365px;
       padding-bottom: 0;
       box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -151,6 +165,9 @@ section {
       .text-wrapper {
         float: right;
         width: calc(100% / 2);
+        max-height: 335px;
+        overflow: auto;
+        margin-bottom: 20px;
       }
       h2 {
         font-size: 0.9em;
@@ -170,6 +187,12 @@ section {
   }
   .show-header {
     border: 1px solid $lightGrey;
-    border-bottom: 2px solid #FFF;
+    border-bottom: 1px solid transparent;
+  }
+  #code-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
